@@ -1,14 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import { useLocation } from 'react-router-dom';
+import Admin from './Pages/Admin';
+import MainRoutes from './Pages/MainRoutes';
+import Navbar from './Components/Navbar';
 
 function App() {
-  const location=useLocation()
-  console.log(location);
   return (
-    <div className="App">
-      
-    </div>
+    <>
+    <Navbar/>
+    <MainRoutes/>
+    </>
   );
 }
 
